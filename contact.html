@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>Endeavour</h2>
+            <span id="open"><i class="fa fa-bars"></i></span>
+            <span id="close"><i class="fa fa-close"></i></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="contact-us">
+            <div class="header">
+                <header><i class="fa fa-phone"></i> Contact Us</header>
+            </div>
+            <div class="details-form">
+                <div class="form">
+                    
+                    <form action="">
+                        <textarea rows="7" cols="30" placeholder="Enter Description"></textarea><br>
+                        <input type="text" class="half" placeholder="Name">
+                        <input type="email" class="half" placeholder="Email"><br>
+                        <input type="number" class="full" placeholder="Phone Number"><br>
+                        <input type="text" class="full" placeholder="Enquiry About"><br>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="details">
+                    <div class="head-office">
+                        <i class="fa fa-home"></i>
+                        <span>153,New Civic Centre,Bhilai
+                            Chhattisgarh,Pin-490006</span>
+                    </div>
+                    <div class="mobile">
+                        <i class="fa fa-mobile"></i>
+                        <span>0788-4033175</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var open = document.getElementById("open");
+        var close = document.getElementById("close");
+        open.addEventListener('click', opensidebar)
+        close.addEventListener('click', closesidebar)
+
+        function opensidebar() {
+            document.getElementById("nav").style.display = "block";
+            open.style.display = "none";
+            close.style.display = "block";
+
+        }
+
+        function closesidebar() {
+            document.getElementById("nav").style.display = "none";
+            close.style.display = "none";
+            open.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>About Us</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>Endeavour</h2>
+            <span id="open"><i class="fa fa-bars"></i></span>
+            <span id="close"><i class="fa fa-close"></i></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+        <div class="about-us">
+           <div class="about-header">
+               <h2>About Us</h2>
+           </div>
+            <div class="about-them">
+                <p>It is a non-governmental organization for welfare in the education field. It plays an important role in supporting the most vulnerable children to access their right to education through innovative ideas such as forming student groups and child-tracking systems, holding awareness workshops with parents to ensure that they send children to school. It also provides placement & apprenticeship opportunities to ITI, BTech, and diploma students for their bright future.</p>
+            </div>
+            <div class="mvm">
+                <div class="mission">
+                    <img src="images/mission.png" width="100" height="100" alt="mission">
+                    <header>Our Mission</header>
+                    <p class="text">Endeavour Educational Welfare Society is established with the sole aim of giving a fair chance to bring out the hidden potential because of its strong belief thatâ€œEvery individual is special in himself, some get the chance to explore and some donot. Our main purpose is to analyze the financial and non-financial limitations that restricts the educational improvement or development of any needy individual and thus support him/her. There are certain reason that restricts the educational improvement of any needy or interested individual, so we took an initiative to identify those restrictions and support them for upliftment of the society.</p>
+                </div>
+                <div class="vision">
+                    <img src="images/vission.png" width="100" height="100" alt="vission">
+                    <header>Our Vission</header>
+                    <p class="text">India is a nation of a billion dreams, a billion aspirants and above all great opportunities. To turn these dreams into reality, especially for the vulnerable sections of society, Endeavour Educational Welfare Society has taken the path of inclusive development to address their educational needs. To work for the educational improvement or development of needy sections of the society. We try to educate those people who are financially weak because everyone has the right to get educated.</p>
+                </div>
+                <div class="membership">
+                    <img src="images/membership.png" width="100" height="100" alt="membership">
+                    <header>Membership</header>
+                    <p class="text">Anybody who is interested to contribute, support and want to be a part of the genuine efforts for the above mentioned purpose or willing to be associated with the society for a noble cause is supposed to fill the membership form of the society and duly submit it with a donation amount of Rs. 500/- (Rupees Five Hundred Only) against a receipt of donation given to the society.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var open = document.getElementById("open");
+        var close = document.getElementById("close");
+        open.addEventListener('click', opensidebar)
+        close.addEventListener('click', closesidebar)
+
+        function opensidebar() {
+            document.getElementById("nav").style.display = "block";
+            open.style.display = "none";
+            close.style.display = "block";
+
+        }
+
+        function closesidebar() {
+            document.getElementById("nav").style.display = "none";
+            close.style.display = "none";
+            open.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>

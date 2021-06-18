@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/*Navbar-------------------*/
+.navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px 0;
+}
+
+.navbar h2 {
+    margin: 0 auto 0px 40px;
+    font-size: 30px;
+}
+
+
+/*Nvabar at minimum length of screen 810px*/
+@media(min-width: 810px) {
+
+
+    .navbar ul {
+        list-style: none;
+        margin-right: 40px;
+    }
+
+    .navbar ul li {
+        display: inline-block;
+        margin: auto 20px;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        padding: 5px 10px;
+        cursor: pointer;
+    }
+
+    .navbar ul li a:hover {
+        border: 1px solid black;
+        padding: 4px 9px;
+    }
+
+    #close,
+    #open {
+        display: none;
+    }
+}
+
+/*Nvabar at width below 810px */
+@media(max-width: 810px) {
+    #nav {
+        display: none;
+    }
+
+    .navbar span {
+        margin: 0 20px 0 0;
+    }
+
+    .navbar span i {
+        font-size: 25px;
+    }
+
+    .navbar #close {
+        position: absolute;
+        display: none;
+    }
+
+    .navbar ul {
+        position: absolute;
+        width: 300px;
+        background: white;
+        right: 0;
+        top: 61px;
+        list-style: none;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        color: black;
+        cursor: pointer;
+    }
+
+    .navbar ul li a:hover {
+
+        color: rgba(0, 0, 0, 0.5);
+
+    }
+
+    .navbar ul li {
+        padding: 15px 40px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+.content {
+    width: 100%;
+    height: 92vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/graduation.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+}
+
+.content-image {
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 20%;
+    transform: translate(-30%, -50%);
+}
+
+.content-image p {
+    font-size: 30px;
+    color: white;
+}
+
+.content-image .link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content-image a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px 0 0;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 3px solid #3498DB
+}
+
+.content-image a:hover {
+    border: 4px solid #5DADE2;
+    padding: 4px 9px;
+}
+
+@media(max-width:940px) {
+    .content-image {
+        width: 500px;
+    }
+
+    .content-image p {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:740px) {
+    .content-image {
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+}
+
+@media(max-width:520px) {
+    .content-image {
+        width: 450px;
+    }
+
+    .content-image p {
+        font-size: 20px;
+    }
+
+    .content-image a {
+        font-size: 17px;
+    }
+}
+
+@media(max-width:480px) {
+    .content-image {
+        width: 320px;
+    }
+
+    .content-image p {
+        font-size: 18px;
+    }
+
+    .content-image a {
+        font-size: 15px;
+    }
+    .navbar ul{
+        width: 250px;
+    }
+}
+
+
+
+/*About us page*/
+.about-them{
+    width: 96%;
+    margin: 30px auto 0 auto;
+    border-radius: 5px;
+}
+.about-header{
+    text-align: center;
+    margin: 2rem 0 0 0;
+}
+.about-header h2{
+    font-size: 46px;
+}
+.mvm{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 2rem 3rem 1rem 3rem;
+}
+.mission, .vision, .membership{
+    width: 28%;
+    border: 1px solid rgba(0,0,0,0.6);
+    border-radius: 5px;
+    min-width: 340px;
+    margin-bottom: 10px;
+}
+.mission:hover, .vision:hover, .membership:hover{
+    transform: scale(1.01);
+    transition: 0.3s ease-in-out;
+}
+.about-us img{
+    margin: 10px 0;
+}
+.about-us header{
+    font-size: 23px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.about-us p{
+    width: 90%;
+    margin: 0 auto 10px auto;
+}
+
+
+/*Contact Us Page*/
+.contact-us{
+    width: 90%;
+    margin: 4rem auto 1rem auto;
+}
+.header{
+    text-align: center;
+}
+.header header{
+    font-size: 40px;
+    font-weight: 600;
+}
+.details-form{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    margin: 4rem 0 0 0;
+}
+
+.form form{
+    width: 90%;
+    margin: 0 auto;
+}
+.form form textarea{
+    width: 94%;
+    padding: 10px 0 0 10px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.half{
+    width: 45%;
+    height: 40px;
+    margin: 10px 1.5% 10px 0;
+    padding: 0 0 0 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.full {
+    width: 94%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 0 0 10px;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.3);
+}
+.form button{
+    margin: 10px 0;
+    outline: none;
+    padding: 5px 20px;
+    font-size: 17px;
+    background: #1197EF;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background: rgba(17,151,239, 0.7)
+}
+
+.details{
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.head-office, .mobile{
+    display: grid;
+    grid-template-columns: 10% 60%;
+    margin-bottom: 30px;
+}
+.mobile i, .head-office i{
+    font-size: 25px;
+}
+
+
+
+@media(max-width:915px){
+    .details-form{
+        grid-template-columns: 100%;
+    }
+}
+@media(max-width:660px){
+    .half{
+        width: 94%;
+    }
+    .head-office, .mobile{
+        grid-template-columns: 10% 80%;
+    }
+}
+
+/*Services*/
+.services{
+    width: 80%;
+    margin: 0 auto;
+}
+.service-header{
+    text-align: center;
+    margin: 3rem 0 1rem 0;
+    font-size: 30px;
+}
+.service-desc{
+    text-align: center;
+}
+.service-desc h3{
+    margin: 10px 0;
+    font-weight: 100;
+}
+.three-services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:4rem 0 2rem 0;
+}
+.each-service{
+    width: 25%;
+    text-align: center;
+    margin: 20px;
+    border-radius:5px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    min-width: 300px;
+}
+.each-service:hover{
+    transform: scale(1.03);
+    transition: 0.3s ease-in-out;
+}
+.each-service img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 200px;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2)
+}
+.each-service h3{
+    margin: 10px 10px;
+}
+.each-service p{
+    margin: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

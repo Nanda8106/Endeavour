@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Services</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <h2>Endeavour</h2>
+            <span id="open"><i class="fa fa-bars"></i></span>
+            <span id="close"><i class="fa fa-close"></i></span>
+            <nav id="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+
+        </div>
+
+
+        <div class="services">
+            <div class="service-header">
+                <h2>
+                    Our Services
+                </h2>
+            </div>
+            <div class="service-desc">
+                <h3>We plays an important role in supporting the most vulnerable children to access their right to education through innovative ideas</h3>
+            </div>
+            <div class="three-services">
+
+                <div class="each-service">
+                    <img src="images/student_group.jpg" alt="">
+                    <h3>Forming Student Groups</h3>
+                    <p>This is a description for Forming student Groups. You can write any thing according to your wish</p>
+                </div>
+                <div class="each-service">
+                    <img src="images/child-track.jpg" alt="">
+                    <h3>Child Tracking System</h3>
+                    <p>This is a description for Child Tracking System. You can write any thing according to your wish</p>
+                </div>
+                <div class="each-service">
+                    <img src="images/workshops.png" alt="">
+                    <h3>Awareness Workshops</h3>
+                    <p>This is a description for Awareness Workshops. You can write any thing according to your wish</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        var open = document.getElementById("open");
+        var close = document.getElementById("close");
+        open.addEventListener('click', opensidebar)
+        close.addEventListener('click', closesidebar)
+
+        function opensidebar() {
+            document.getElementById("nav").style.display = "block";
+            open.style.display = "none";
+            close.style.display = "block";
+
+        }
+
+        function closesidebar() {
+            document.getElementById("nav").style.display = "none";
+            close.style.display = "none";
+            open.style.display = "block";
+        }
+
+    </script>
+</body>
+
+</html>
