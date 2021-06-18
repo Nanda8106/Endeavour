@@ -362,7 +362,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin:4rem 0 2rem 0;
+    margin:2rem 0 2rem 0;
 }
 .each-service{
     width: 25%;
@@ -388,16 +388,3 @@
 .each-service p{
     margin: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
