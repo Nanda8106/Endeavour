@@ -23,6 +23,7 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
     padding: 8px 0;
+    z-index: 1000;
 }
 
 .navbar h2 {
@@ -231,10 +232,11 @@
     border-radius: 5px;
     min-width: 340px;
     margin-bottom: 10px;
+    transition: 0.3s ease-in-out;
 }
 .mission:hover, .vision:hover, .membership:hover{
     transform: scale(1.01);
-    transition: 0.3s ease-in-out;
+    
 }
 .about-us img{
     margin: 10px 0;
@@ -371,10 +373,10 @@
     border-radius:5px;
     box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
     min-width: 300px;
+    transition: 0.3s ease-in-out;
 }
 .each-service:hover{
     transform: scale(1.03);
-    transition: 0.3s ease-in-out;
 }
 .each-service img{
     border-radius: 5px 5px 0 0;
